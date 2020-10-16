@@ -4,6 +4,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.setUseGitIgnore(false);
 
 	eleventyConfig.addWatchTarget("./_tmp/styles.css");
+	eleventyConfig.addWatchTarget("./js/scripts.js");
+	eleventyConfig.addPassthroughCopy("img");
 
 	eleventyConfig.addPassthroughCopy({
 		"./_tmp/styles.css": "./css/styles.css"
