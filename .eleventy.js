@@ -3,13 +3,15 @@ const htmlmin = require("html-minifier");
 module.exports = function(eleventyConfig) {
 	eleventyConfig.setUseGitIgnore(false);
 
-	eleventyConfig.addWatchTarget("./_tmp/styles.css");
-	eleventyConfig.addWatchTarget("./js/scripts.js");
-	eleventyConfig.addWatchTarget("img");
+	eleventyConfig.addWatchTarget("./static/img");
+	eleventyConfig.addPassthroughCopy({"./static/img":"./img/"});
 	
-	eleventyConfig.addPassthroughCopy("img");
-	eleventyConfig.addPassthroughCopy({	"./_tmp/styles.css": "./css/styles.css"});
-	eleventyConfig.addPassthroughCopy({	"./js/scripts.js": "./js/scripts.js"});
+	eleventyConfig.addWatchTarget("./_tmp/styles.css");
+	eleventyConfig.addPassthroughCopy({"./_tmp/styles.css": "./css/styles.css"});
+	
+	eleventyConfig.addWatchTarget("./static/js/");
+	eleventyConfig.addPassthroughCopy({"./static/js/": "./js/"});
+	
 	eleventyConfig.addPassthroughCopy({"./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",});
 
 	eleventyConfig.addShortcode("version", function() {
@@ -32,4 +34,17 @@ module.exports = function(eleventyConfig) {
 
 		return content;
 	});
+
+	return {
+		dir: {
+			input: 'views',
+			output: 'dist',
+			data: '_data',
+			includes: '_includes'
+
+		},
+		passthroughFileCopy: true,
+		templateFormats: ['njk', 'md', 'css', 'html', 'yml'],
+		htmlTemplateEngine: 'njk'
+	}
 };
