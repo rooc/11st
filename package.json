@@ -7,9 +7,8 @@
 	"license": "MIT",
 	"scripts": {
 		"clean": "rimraf _site",
-		"dev": "eleventy --serve --port=7000 & postcss styles/styles.css --o _tmp/styles.css --watch",
-		"start": "eleventy --serve --port=7000 & postcss styles/styles.css --o _tmp/styles.css --watch",
-		"build": "yarn clean && ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss styles/styles.css --o _site/css/styles.css"
+		"dev": "eleventy --serve --port=7000 & postcss css/styles.css --o _tmp/styles.css --watch",
+		"build": "yarn clean && ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss css/styles.css --o _site/css/styles.css"
 	},
 	"dependencies": {
 		"rimraf": "^3.0.2",
