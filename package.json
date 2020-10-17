@@ -1,7 +1,7 @@
 {
-	"name": "speeddial",
+	"name": "eleventy starter",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "scripts.js",
 	"repository": "git@github.com:rooc/speeddial.git",
 	"author": "rooc <vadym.hrachov@pm.me>",
 	"license": "MIT",
