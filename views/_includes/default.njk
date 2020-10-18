@@ -1,9 +1,7 @@
 <html lang="en">
 
 <head>
-	<title>
-		{% block title %}Does it work?{% endblock %}
-	</title>
+	<title>{% block title %}{{ site.title }}{% endblock %}</title>
 	<meta charset="UTF-8" />
 	{% if description %}
 	<meta name="description" content="{{description}}" />
@@ -20,7 +18,7 @@
 	{% endblock %}
 
 
-	{% if elv.environment == "development" %}
+	{% if 11st.environment == "development" %}
 	<script src="/js/alpine.js?v={% version %}"></script>
 	<script src="/js/scripts.js?v={% version %}"></script>
 	{% else %}
