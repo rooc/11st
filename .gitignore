@@ -3,7 +3,6 @@
 
 # build artefacts
 /dist
-/src/site/css
 
 # secrets
 .env
@@ -13,7 +12,7 @@
 .AppleDouble
 .LSOverride
 
-_site/
-_tmp/
 package-lock.json
 yarn.lock
+
+.parcel-cache
