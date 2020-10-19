@@ -6,13 +6,6 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("./static/img");
 	eleventyConfig.addPassthroughCopy({"./static/img": "./img/"});
 
-	eleventyConfig.addWatchTarget("./static/js/");
-	eleventyConfig.addPassthroughCopy({"./static/js/": "./js/"});
-
-	eleventyConfig.addPassthroughCopy({
-		"./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
-	});
-
 	eleventyConfig.addShortcode("version", function() {
 		return String(Date.now());
 	});

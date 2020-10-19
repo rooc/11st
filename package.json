@@ -7,19 +7,23 @@
 	"license": "MIT",
 	"scripts": {
 		"clean": "rimraf dist",
-		"jsmin": "terser dist/js/*.js -o dist/js/scripts.min.js",
+		"terser": "terser dist/js/scripts.js -o dist/js/scripts.js",
 		"htmlmin": "html-minifier --input-dir dist --output-dir dist --file-ext html --collapse-whitespace --remove-comments --use-short-doctype",
 		"elv": "ELEVENTY_ENV=development eleventy --watch",
 		"elv:prod": "ELEVENTY_ENV=production eleventy",
 		"postcss": "postcss static/css/styles.css --o dist/css/styles.css --watch",
 		"postcss:prod": "NODE_ENV=production postcss static/css/styles.css --o dist/css/styles.css",
+		"rollup": "rollup -c --watch --no-watch.clearScreen",
+		"rollup:prod": "rollup -c --compact",
 		"serve": "light-server -c .lightserverrc",
-		"dev": "run-p elv postcss serve",
-		"build": "run-s clean elv:prod postcss:prod jsmin htmlmin"
+		"dev": "run-p elv postcss serve rollup",
+		"build": "run-s clean elv:prod postcss:prod rollup:prod htmlmin terser"
 	},
 	"dependencies": {},
 	"devDependencies": {
 		"@11ty/eleventy": "^0.11.0",
+		"@rollup/plugin-commonjs": "^15.1.0",
+		"@rollup/plugin-node-resolve": "^9.0.0",
 		"alpinejs": "^2.7.0",
 		"html-minifier": "^4.0.0",
 		"light-server": "^2.9.1",
@@ -30,6 +34,8 @@
 		"postcss-import": "^12.0.1",
 		"postcss-nested": "^5.0.1",
 		"rimraf": "^3.0.2",
+		"rollup": "^2.32.0",
+		"rollup-plugin-postcss": "^3.1.8",
 		"tailwindcss": "^1.9.2",
 		"terser": "^5.3.5"
 	}
