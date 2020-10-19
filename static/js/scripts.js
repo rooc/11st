@@ -1,8 +1,8 @@
 import './libs/alpine.js';
 import log from "./modules/module.js";
 
-var message = function () {
+window.message = function () {
 	return {
-		msg: "Hello World!"
+		msg: "Hello World Man!"
 	}
 }
