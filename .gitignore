@@ -17,3 +17,5 @@ _site/
 _tmp/
 package-lock.json
 yarn.lock
+
+.parcel-cache/
