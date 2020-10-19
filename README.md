@@ -1,4 +1,6 @@
 # Eleventy Starter
 
-+ Tailwind
++ PostCSS
++ TailwindCSS
 + AlpineJS
++ Parcel
