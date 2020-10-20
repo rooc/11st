@@ -4,4 +4,4 @@
 @tailwind components;
 @tailwind utilities;
 
-body { @apply bg-orange-300; }
+body { @apply bg-indigo-300; }
