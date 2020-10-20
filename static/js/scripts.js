@@ -5,6 +5,6 @@ log("Yo Man");
 
 window.message = function () {
 	return {
-		msg: "Hello World Yo!"
+		msg: "Hello World!"
 	}
 }
