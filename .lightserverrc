@@ -2,7 +2,7 @@
 	"port": 7000,
 	"serve": "dist",
 	"bind": "localhost",
-	"interval": 500,
+	"interval": 100,
 	"delay": 0,
 	"quiet": false,
 	"watchexps": [
