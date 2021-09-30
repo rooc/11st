@@ -19,23 +19,25 @@
 		"dev": "run-p elv postcss serve rollup",
 		"build": "run-s clean elv:prod postcss:prod rollup:prod htmlmin terser"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"autoprefixer": "^10.3.6"
+	},
 	"devDependencies": {
-		"@11ty/eleventy": "^0.11.0",
+		"@11ty/eleventy": "^0.12.1",
 		"@rollup/plugin-commonjs": "^15.1.0",
 		"@rollup/plugin-node-resolve": "^9.0.0",
-		"alpinejs": "^2.7.0",
+		"alpinejs": "^3.4.2",
 		"html-minifier": "^4.0.0",
 		"light-server": "^2.9.1",
 		"npm-run-all": "^4.1.5",
-		"postcss": "^8.1.1",
+		"postcss": "^8.3.8",
 		"postcss-clean": "^1.1.0",
-		"postcss-cli": "^8.1.0",
+		"postcss-cli": "^9.0.1",
 		"postcss-import": "^12.0.1",
 		"postcss-nested": "^5.0.1",
 		"rimraf": "^3.0.2",
-		"rollup": "^2.32.0",
-		"tailwindcss": "^1.9.2",
+		"rollup": "^2.57.0",
+		"tailwindcss": "^2.2.15",
 		"terser": "^5.3.5"
 	}
 }
