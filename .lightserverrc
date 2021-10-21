@@ -6,9 +6,9 @@
 	"delay": 0,
 	"quiet": false,
 	"watchexps": [
-      "**/*.css",
-      "**/*.js",
-		"**/*.html"
+      "*/**/*.css",
+      "*/**/*.js",
+		"*/*.html"
 	],
 	"http2": false,
 	"open": false
