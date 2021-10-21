@@ -6,4 +6,4 @@ Alpine.data("log", log);
 Alpine.data("message", message);
 Alpine.start();
 
-log("Yo Man");
+log("Yo Man 2");
