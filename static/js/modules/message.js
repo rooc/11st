@@ -1,5 +1,7 @@
-const message = () => {
-	msg: "Hello World Yo!"
+const message = function() {
+	return {
+		msg: "AlpineJS!"
+	}
 }
 
 export default message;
