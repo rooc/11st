@@ -1,6 +1,6 @@
 const message = function() {
 	return {
-		msg: "AlpineJS!"
+		msg: "AlpineJS!!!"
 	}
 }
 

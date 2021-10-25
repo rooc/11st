@@ -4,4 +4,4 @@
 @tailwind components;
 @tailwind utilities;
 
-body { @apply bg-indigo-500; }
+body { @apply bg-blue-700 bg-opacity-75; }
