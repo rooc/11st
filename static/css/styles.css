@@ -4,4 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body { @apply bg-teal-400; }
+body { @apply bg-teal-800; }
+
+.text-change { @apply text-gray-100; }
+.change { @apply text-gray-100; }
