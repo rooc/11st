@@ -5,15 +5,15 @@
 {% block content %}
 <div class="fixed inset-0 flex justify-center items-center">
 	<div>
-		<span class="text-change">Good design</span><br />
-		<span class="change">is<br />as little design<br />as possible</span><br>
-		<span x-data="message()" x-text="msg"></span>
+		<span class="text-change">Good design</span>
+		<span class="change">is as little design<br />as possible</span><br>
+		<span x-data="message()" class="text-yellow-500 text-4xl" x-text="msg"></span>
 	</div>
 </div>
 <script>
 document.addEventListener('alpine:init', () => {
 	Alpine.data('message', () => ({
-		msg: "Hello World YoYo!"
+		msg: "Hello World Yo!"
 	}))
 })
 </script>
