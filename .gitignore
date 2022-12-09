@@ -18,3 +18,5 @@ yarn.lock
 .parcel-cache
 
 .yarn
+
+*.sublime*
