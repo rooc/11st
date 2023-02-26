@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body { @apply bg-zinc-800; }
+body { @apply bg-tahiti; }
 
 .text-change { @apply text-gray-100; }
 .change { @apply text-gray-100; }
