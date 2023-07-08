@@ -6,4 +6,4 @@ Alpine.data("message", message);
 window.Alpine = Alpine;
 Alpine.start();
 
-log("Yo Man 3");
+log(message());
