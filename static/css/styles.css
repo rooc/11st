@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-tahiti;
+    @apply bg-slate-900;
 }
 
 .text-change {

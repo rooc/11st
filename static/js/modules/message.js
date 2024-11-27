@@ -1,5 +1,5 @@
 const message = () => {
-	return "Hello World YoYo!"
+	return "Hello World!"
 }
 
 export default message;
