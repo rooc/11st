@@ -1,8 +1,6 @@
-@import "module.css";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "./module";
+@import "./theme";
 
 body {
     @apply bg-slate-900;
